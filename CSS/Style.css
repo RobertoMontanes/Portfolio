@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --header: #1E1E1E;
+    --blanco: #fff;
+    --negro: #000
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+    background-color: var(--header);
+}
+header .imagen-personal img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+header .imagen-personal{
+   display: flex;
+    align-items: center;
+    
+}
+
+header .nombre{
+    font-size: 15px;
+    color: var(--blanco);
+}
+nav{
+    width: 50%;
+    align-items: center;
+    
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+nav ul li{
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--blanco);
+
+}
