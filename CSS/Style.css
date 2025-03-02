@@ -53,25 +53,54 @@ nav ul li a {
   padding: 20px;
 }
 main {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
-main .titulo{
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
+main .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
 }
+
 main .titulo img {
   height: 50vh;
   width: 50vh;
   border-radius: 50%;
 }
-main .titulo h1{
-    margin-top: 3%;
-    margin-right: 15%;
-    
+
+main .titulo .contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 60px;
+
 }
-main .contenedor-sobremi h1 {
-  padding: 20px;
-  margin-top: 5%;
+
+main .titulo h1 {
+  margin-left: 20px;
+  font-size: 2rem;
+
+}
+
+main .titulo .iconos ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+main .titulo .iconos ul li a {
+  font-size: 24px;
+  color: black;
+  transition: 0.3s;
+
+}
+
+main .titulo .iconos ul li a:hover {
+  color: var(--amarillo);
+  transition: 0.3s ease;
 }
