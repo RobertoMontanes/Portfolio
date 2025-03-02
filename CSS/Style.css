@@ -43,6 +43,7 @@
     display: flex;
     margin: 20px;
     align-items: center;
+    margin-left: -100px;
   }
   
   header .informacion-personal p {
@@ -50,7 +51,8 @@
   }
   
   header nav {
-    width: 60%;
+    width: 40%;
+    margin-right: -120px
   }
   
   header nav ul li {
@@ -67,7 +69,9 @@
     font-size: 20px;
     color: #E0F2FF;
   }
-  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
   main {
     text-align: center;
     margin: 0 auto;
@@ -97,7 +101,6 @@ main button{
     border: 3px solid black;
     border-radius: 50px;
     padding: 10px 52px;
-    
     background-color:#24408a;
     margin-top: 40px;
     min-width: 100px;
