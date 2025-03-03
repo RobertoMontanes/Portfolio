@@ -2,10 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+  letter-spacing: 1px;
 }
 
 body {
-  background: radial-gradient(ellipse at top, #24408a 0%, #161c37 30%);
+  background: radial-gradient(ellipse at top, #24408a 0%, #161c37 40%);
   color: white;
   font-family: Arial, sans-serif;
   min-height: 100vh;
@@ -17,10 +19,12 @@ header {
   width: 100%;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-  padding: 7px;
+  padding: 15px;
   font-size: 20px;
   z-index: 10;
 }
+
+
 
 header .contenedor-header {
   width: 100%;
@@ -33,13 +37,14 @@ header .contenedor-header {
 header .informacion-personal img {
   height: 7vh;
   width: 7vh;
+  margin-left: 5px;
   border-radius: 50%;
   display: flex;
   justify-content: space-around;
 }
 
 header .informacion-personal {
-  color: #F0F8FF;
+  color: #f0f8ff;
   display: flex;
   margin: 20px;
   align-items: center;
@@ -51,8 +56,8 @@ header .informacion-personal p {
 }
 
 header nav {
-  width: 40%;
-  margin-right: -120px
+  width: 30%;
+  margin-right: -350px;
 }
 
 header nav ul li {
@@ -67,37 +72,40 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: #E0F2FF;
+  padding: 10px;
+  white-space: nowrap;
+  color: #e0f2ff;
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
 }
 
-main {
+main,
+section {
+  
   text-align: center;
   margin: 0 auto;
   padding-top: 120px;
   width: 70%;
-  justify-content: space-around;
 }
 
-main .profesion{
+main .profesion {
   width: 70%;
   margin: 0 auto;
   text-align: center;
   font-size: 24px;
 }
 
-main .profesion h1{
+main .profesion h1 {
   color: yellow;
 }
 
 main .botones {
   margin: 30px auto;
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  justify-content: center;
+  gap: 30px;
 }
 
 main .botones a {
@@ -107,7 +115,7 @@ main .botones a {
   padding: 10px 52px;
   background-color: #24408a;
   text-decoration: none;
-  color: #E0F2FF;
+  color: #e0f2ff;
   display: inline-block;
   transition: 0.5s ease;
 }
@@ -117,3 +125,47 @@ main .botones a:hover {
   border: 3px solid #fff;
   text-decoration: none;
 }
+main .iconos img {
+  max-width: 50px;
+  cursor: pointer;
+}
+main .iconos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+section h1{
+  
+  text-align: left;
+  font-size: 35px;
+  padding-bottom: 50px;
+}
+.experiencia .trabajos{
+  margin: 0 auto;
+  text-align: left;
+  
+  width: 90%;
+  border-left:2px solid  #00CFFF  ;
+}
+.experiencia .trabajos h2{
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+
+.experiencia .titulos{
+  margin: 0 auto;
+  text-align: left;
+  
+  width: 90%;
+  border-left:2px solid  #00CFFF  ;
+}
+.experiencia .titulos h2{
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.experiencia .titulos a{
+  
+  color: #fff;
+}
+
