@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  letter-spacing: 0.25px;
+  background: linear-gradient(rgba(40, 40, 40, 0.6), rgba(40, 40, 40, 0.6)),
+    url(../img/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-shadow: 1.7px 1px #000;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.titulo1 {
+  margin-top: 8.1%;
+  text-align: center;
+  color: #e8ebe2;
+  font-size: larger;
+}
+
+a {
+  cursor: default;
+  text-decoration: none;
+}
+
+.caja-verde {
+  background-color: #586424;
+  border-radius: 9px;
+  color: #fff;
+  padding: 30px;
+  text-shadow: none;
+  text-align: center;
+  width: 90%;
+  max-width: 271px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.MASAKALI {
+  display: block;
+  letter-spacing: 5.7px;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  transform: scaleY(1.7);
+}
+
+.Pizza {
+  text-transform: lowercase;
+  font-size: 1.6rem;
+  text-align: right;
+  padding-bottom: 15%;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+hr {
+  border: 1px solid #fff;
+}
+
+.CDB {
+  text-align: center;
+  margin-top: 5px;
+  letter-spacing: -2px;
+  font-size: 1.5rem;
+  font-weight: 550;
+  transform: scaleY(1.4);
+}
+
+.texto p {
+  text-align: center;
+  margin: 25px;
+  color: #e8ebe2;
+  font-size: 0.9rem;
+}
+.texto2 p {
+  text-align: center;
+  margin: 10px;
+  color: #e8ebe2;
+  font-size: 0.9rem;
+}
+.language {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.language img {
+  height: 40px;
+  width: 40px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  background-color: #08a4ac;
+  color: #fff;
+  font-size: 1.1rem;
+  width: 90%;
+  max-width: 375px;
+  height: 55px;
+  border: none;
+  transition: background-color 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #08979e;
+  cursor: pointer;
+}
+.bandera {
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}

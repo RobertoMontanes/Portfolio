@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masakali Pizza - Cristo de Burgos -</title>
+    <link rel="icon" href="../IMG/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/pagina_inicio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="titulos">
+        <h3>
+          <i
+            title="Abrir el menú de navegación"
+            class="bi bi-list"
+            id="menu-toggle"
+          ></i>
+          Masakali Pizza - Cristo de Burgos
+        </h3>
+        <div class="margen">Plaza Cristo de Burgos, 1 - 41003 Sevilla</div>
+      </div>
+      <div class="iconos-izquierda">
+        <a href="carrito.html" class="boton-menu"
+          ><i class="bi bi-cart-fill" id="cart-icon"></i
+        ></a>
+        <a class="boton-menu"
+          ><i class="bi bi-funnel-fill" id="openModalBtn"></i
+        ></a>
+        <a class="boton-menu"><i id="search-icon" class="bi bi-search"></i></a>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h6 class="alergias">Selecciona tus alergias e intolerancias</h6>
+        <div class="intolerancia">
+          <img src="../IMG/intolerancia1.png" alt="intolerancia al trigo" />
+          <img src="../IMG/intolerancia2.png" alt="intolerancia a la lactosa" />
+          <img src="../IMG/intolerancia3.png" alt="intolerancia al apio" />
+          <img
+            src="../IMG/intolerancia4.jpg"
+            alt="intolerancia a los frutos secos"
+          />
+          <img src="../IMG/intolerancia5.jpg" alt="intolerancia al huevo" />
+          <img src="../IMG/intolerancia6.png" alt="intolerancia al pescado" />
+          <img
+            src="../IMG/intolerancia7.png"
+            alt="intolerancia a los mariscos"
+          />
+          <img src="../IMG/intolerancia8.png" alt="intolerancia al cacahuete" />
+          <img src="../IMG/intolerancia9.jpg" alt="intolerancia a la soja" />
+          <img
+            src="../IMG/intolerancia10.png"
+            alt="intolerancia a la Dióxido de Azufre y Sulfitos"
+          />
+          <img
+            src="../IMG/intolerancia11.png"
+            alt="intolerancia a las mostaza"
+          />
+          <img
+            src="../IMG/intolerancia12.png"
+            alt="intolerancia a los granos de sésamo"
+          />
+          <img src="../IMG/intolerancia13.png" alt="intolerancia al altramuz" />
+          <img
+            src="../IMG/intolerancia14.png"
+            alt="intolerancia a los moluscos"
+          />
+        </div>
+
+        <h6 class="aviso-alergenos">
+          <p id="asterisco">*</p>
+          Solo se mostrarán los productos sin los alérgenos seleccionados
+        </h6>
+      </div>
+    </div>
+    <div id="search-overlay" class="search-overlay">
+      <div class="search-input-container">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" id="search-input" />
+        <p class="buscar-producto">Busca Cualquier producto</p>
+      </div>
+      <i id="back-icon" class="bi bi-arrow-left"></i>
+    </div>
+    <div id="overlay">
+      <div id="sidebar" class="sidebar">
+        <div id="imagen-sidebar">
+          <p>
+            Masakali Pizza - <br />
+            Cristo de Burgos
+          </p>
+          <img src="../IMG/fondo.png" alt="Masakali Pizza - Cristo de Burgos" />
+        </div>
+        <a
+          href="https://www.numier.com/carta-digital/carta/masakali/sobreNosotros"
+          >Sobre Nosotros</a
+        >
+        <hr class="hr-sidebar" />
+        <a href="Inicio_ingles.html">Idioma</a>
+        <hr class="hr-sidebar" />
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle"
+            >Términos y Servicios <i class="bi bi-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a
+              href="https://www.numier.com/carta-digital/carta/masakali/termsAndConditions"
+              >Términos y condiciones</a
+            >
+            <a
+              href="https://www.numier.com/carta-digital/carta/masakali/legalNotice"
+              >Aviso legal</a
+            >
+            <a
+              href="https://www.numier.com/carta-digital/carta/masakali/privacyPolicy"
+              >Políticas de privacidad</a
+            >
+            <a
+              href="https://www.numier.com/carta-digital/carta/masakali/cookiePolicy"
+              >Políticas de Cookies</a
+            >
+          </div>
+        </div>
+        <hr class="hr-sidebar" />
+        <a href="https://www.numier.com/carta-digital/carta/masakali/allergens"
+          >Alérgenos</a
+        >
+        <hr class="hr-sidebar" />
+        <a href="Index.html">Ir a pantalla de Inicio</a>
+      </div>
+    </div>
+    <div class="seleccion_productos">
+      <a href="#combo1">COMBO</a>
+      <a href="#medianas1">MEDIANAS</a>
+      <a href="#XXL1">XXL</a>
+      <a href="#postres1">POSTRES</a>
+      <a href="#bebidas1">BEBIDAS</a>
+      <a href="#XXLPorMitades1">XXL Por Mitades</a>
+      <a href="#helados1">HELADOS</a>
+    </div>
+    <div class="destacados">
+      <h2>Productos Destacados</h2>
+    </div>
+    <hr />
+    <div class="postre">
+      <div class="imagen">
+        <img src="../IMG/dinosaur.jpeg" alt="Postre" />
+      </div>
+    </div>
+
+    <div class="destacados" id="combo1">
+      <h2>COMBOS</h2>
+    </div>
+    <hr />
+    <!-- Ejemplo de un producto con el icono de añadir al carrito -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo1.jpg" alt="Combo1" />
+        <p>Serranito Alioli + Happy Hippo</p>
+        <p class="precio">€10.00</p>
+        <!-- Botón para añadir al carrito -->
+        <button
+          class="add-to-cart"
+          data-product="Pizza Margherita"
+          data-price="10"
+          onclick="agregarAlCarrito('Serranito Alioli + Happy Hippo', 10, '../IMG/combo1.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo2.jpg" alt="Combo2" />
+        <p>Camera + Ferrero</p>
+        <p class="precio">€12.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Camera + Ferrero"
+          data-price="12"
+          onclick="agregarAlCarrito('Camera + Ferrero', 12, '../IMG/combo2.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo3.jpg" alt="Combo3" />
+        <p>Cinco quesos + Kinder</p>
+        <p class="precio">€14.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Cinco quesos + Kinder"
+          data-price="14"
+          onclick="agregarAlCarrito('Cinco quesos + Kinder', 14, '../IMG/combo3.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo4.jpg" alt="Combo4" />
+        <p>York + Cheesecake con dulce de leche</p>
+        <p class="precio">€15.00</p>
+        <button
+          class="add-to-cart"
+          data-product="York + Cheesecake con dulce de leche"
+          data-price="15"
+          onclick="agregarAlCarrito('York + Cheesecake con dulce de leche', 15, '../IMG/combo4.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="destacados" id="medianas1">
+      <h2>MEDIANAS</h2>
+    </div>
+    <hr />
+    <p class="pizzas">Pizza Mediana</p>
+    <div class="combos">
+      <a href="#">
+        <img
+          src="https://www.numier.com/carta/imagenproduct/2753/producto-22697.jpg?1732552795"
+          alt="Mediana Al Gusto"
+        />
+        <p>MEDIANA AL GUSTO</p>
+        <p class="precio">€8.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Mediana Al Gusto"
+          data-price="8"
+          onclick="agregarAlCarrito('Mediana Al Gusto', 8, 'https://www.numier.com/carta/imagenproduct/2753/producto-22697.jpg?1732552795')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo3.jpg" alt="Combo3" />
+        <p>Margarita</p>
+        <p class="precio">€7.50</p>
+        <button
+          class="add-to-cart"
+          data-product="Margarita"
+          data-price="7.50"
+          onclick="agregarAlCarrito('Margarita', 7.50, '../IMG/combo3.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo2.jpg" alt="Combo2" />
+        <p>Prosciutto</p>
+        <p class="precio">€9.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Prosciutto"
+          data-price="9"
+          onclick="agregarAlCarrito('Prosciutto', 9, '../IMG/combo2.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo1.jpg" alt="Combo1" />
+        <p>Pepperoni</p>
+        <p class="precio">€10.50</p>
+        <button
+          class="add-to-cart"
+          data-product="Pepperoni"
+          data-price="10.50"
+          onclick="agregarAlCarrito('Pepperoni', 10.50, '../IMG/combo1.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo4.jpg" alt="Combo4" />
+        <p>Vegetal</p>
+        <p class="precio">€11.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Vegetal"
+          data-price="11"
+          onclick="agregarAlCarrito('Vegetal', 11, '../IMG/combo4.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="destacados" id="XXL1">
+      <h2>XXL</h2>
+    </div>
+    <hr />
+    <p class="pizzas">Pizza XXL</p>
+    <div class="combos">
+      <a href="#">
+        <img
+          src="https://www.numier.com/carta/imagenproduct/2753/producto-22697.jpg?1732552795"
+          alt="XXL Al Gusto"
+        />
+        <p>XXL AL GUSTO</p>
+        <p class="precio">€16.00</p>
+        <button
+          class="add-to-cart"
+          data-product="XXL AL GUSTO"
+          data-price="16"
+          onclick="agregarAlCarrito('XXL AL GUSTO', 16, 'https://www.numier.com/carta/imagenproduct/2753/producto-22697.jpg?1732552795')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo3.jpg" alt="Combo3" />
+        <p>Margarita XXL</p>
+        <p class="precio">€18.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Margarita XXL"
+          data-price="18"
+          onclick="agregarAlCarrito('Margarita XXL', 18, '../IMG/combo3.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo2.jpg" alt="Combo2" />
+        <p>Prosciutto XXL</p>
+        <p class="precio">€20.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Prosciutto XXL"
+          data-price="20"
+          onclick="agregarAlCarrito('Prosciutto XXL', 20, '../IMG/combo2.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo1.jpg" alt="Combo1" />
+        <p>Pepperoni XXL</p>
+        <p class="precio">€21.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Pepperoni XXL"
+          data-price="21"
+          onclick="agregarAlCarrito('Pepperoni XXL', 21, '../IMG/combo1.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/combo4.jpg" alt="Combo4" />
+        <p>Vegetal XXL</p>
+        <p class="precio">€22.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Vegetal XXL"
+          data-price="22"
+          onclick="agregarAlCarrito('Vegetal XXL', 22, '../IMG/combo4.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="destacados" id="postres1">
+      <h2>POSTRES</h2>
+    </div>
+    <hr />
+    <p class="pizzas">Postres</p>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/postre1.jpg" alt="Postre1" />
+        <p>Chocolate blanco con galletas</p>
+        <p class="precio">€5.50</p>
+        <button
+          class="add-to-cart"
+          data-product="Chocolate blanco con galletas"
+          data-price="5.50"
+          onclick="agregarAlCarrito('Chocolate blanco con galletas', 5.50, '../IMG/postre1.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/postre2.jpg" alt="Postre2" />
+        <p>Kinder</p>
+        <p class="precio">€4.50</p>
+        <button
+          class="add-to-cart"
+          data-product="Kinder"
+          data-price="4.50"
+          onclick="agregarAlCarrito('Kinder', 4.50, '../IMG/postre2.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/postre3.jpg" alt="Postre3" />
+        <p>Cheesecake de fresa</p>
+        <p class="precio">€6.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Cheesecake de fresa"
+          data-price="6.00"
+          onclick="agregarAlCarrito('Cheesecake de fresa', 6.00, '../IMG/postre3.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/postre4.jpg" alt="Postre4" />
+        <p>Tres chocolates Belgas</p>
+        <p class="precio">€7.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Tres chocolates Belgas"
+          data-price="7.00"
+          onclick="agregarAlCarrito('Tres chocolates Belgas', 7.00, '../IMG/postre4.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/postre5.jpg" alt="Postre5" />
+        <p>Crema de Lotus</p>
+        <p class="precio">€5.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Crema de Lotus"
+          data-price="5.00"
+          onclick="agregarAlCarrito('Crema de Lotus', 5.00, '../IMG/postre5.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+    <div class="destacados" id="bebidas1">
+      <h2>BEBIDAS</h2>
+    </div>
+    <hr />
+    <!-- CocaCola -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/bebida1.jpg" alt="CocaCola" />
+        <p>CocaCola</p>
+        <p class="precio">€2.00</p>
+        <button
+          class="add-to-cart"
+          data-product="CocaCola"
+          data-price="2.00"
+          onclick="agregarAlCarrito('CocaCola', 2.00, '../IMG/bebida1.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <!-- Fanta -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/bebida2.jpg" alt="Fanta" />
+        <p>Fanta</p>
+        <p class="precio">€2.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Fanta"
+          data-price="2.00"
+          onclick="agregarAlCarrito('Fanta', 2.00, '../IMG/bebida2.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <!-- Fuze Tea -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/bebida3.png" alt="Fuze Tea" />
+        <p>Fuze Tea</p>
+        <p class="precio">€2.50</p>
+        <button
+          class="add-to-cart"
+          data-product="Fuze Tea"
+          data-price="2.50"
+          onclick="agregarAlCarrito('Fuze Tea', 2.50, '../IMG/bebida3.png')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <!-- Cruzcampo -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/bebida4.jpg" alt="Cruzcampo" />
+        <p>Cruzcampo</p>
+        <p class="precio">€3.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Cruzcampo"
+          data-price="3.00"
+          onclick="agregarAlCarrito('Cruzcampo', 3.00, '../IMG/bebida4.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <!-- Agua en caja -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/bebida5.jpg" alt="Agua en caja" />
+        <p>Agua en caja</p>
+        <p class="precio">€1.50</p>
+        <button
+          class="add-to-cart"
+          data-product="Agua en caja"
+          data-price="1.50"
+          onclick="agregarAlCarrito('Agua en caja', 1.50, '../IMG/bebida5.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <div class="destacados" id="XXLPorMitades1">
+      <h2>XXL Por Mitades</h2>
+    </div>
+    <hr />
+
+    <p class="pizzapormitades">XXL Por Mitades</p>
+
+    <div class="destacados" id="helados1">
+      <h2>HELADOS</h2>
+    </div>
+    <hr />
+    <p class="pizzas"></p>
+    <!-- Magnum Chocolate -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/helado1.jpg" alt="Magnum Chocolate" />
+        <p>Magnum Chocolate</p>
+        <p class="precio">€3.50</p>
+        <button
+          class="add-to-cart"
+          data-product="Magnum Chocolate"
+          data-price="3.50"
+          onclick="agregarAlCarrito('Magnum Chocolate', 3.50, '../IMG/helado1.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <!-- Ben & Jerry Chocolate -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/helado2.jpg" alt="Ben & Jerry Chocolate" />
+        <p>Ben & Jerry Chocolate</p>
+        <p class="precio">€4.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Ben & Jerry Chocolate"
+          data-price="4.00"
+          onclick="agregarAlCarrito('Ben & Jerry Chocolate', 4.00, '../IMG/helado2.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <!-- Magnum Chocolate con avellanas -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/helado3.jpg" alt="Magnum Chocolate con avellanas" />
+        <p>Magnum Chocolate con avellanas</p>
+        <p class="precio">€4.50</p>
+        <button
+          class="add-to-cart"
+          data-product="Magnum Chocolate con avellanas"
+          data-price="4.50"
+          onclick="agregarAlCarrito('Magnum Chocolate con avellanas', 4.50, '../IMG/helado3.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <!-- Magnum Chocolate blanco -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/helado4.jpg" alt="Magnum Chocolate blanco" />
+        <p>Magnum Chocolate blanco</p>
+        <p class="precio">€4.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Magnum Chocolate blanco"
+          data-price="4.00"
+          onclick="agregarAlCarrito('Magnum Chocolate blanco', 4.00, '../IMG/helado4.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <!-- Magnum Especial Chocolate Ferrero -->
+    <div class="combos">
+      <a href="#">
+        <img src="../IMG/helado5.jpg" alt="Magnum Especial Chocolate Ferrero" />
+        <p>Magnum Especial Chocolate Ferrero</p>
+        <p class="precio">€5.00</p>
+        <button
+          class="add-to-cart"
+          data-product="Magnum Especial Chocolate Ferrero"
+          data-price="5.00"
+          onclick="agregarAlCarrito('Magnum Especial Chocolate Ferrero', 5.00, '../IMG/helado5.jpg')"
+        >
+          Añadir al carrito
+        </button>
+      </a>
+    </div>
+
+    <a href="#" class="flecha"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    <br /><br /><br /><br />
+
+    <script src="../JS/Index.js" defer></script>
+  </body>
+</html>
