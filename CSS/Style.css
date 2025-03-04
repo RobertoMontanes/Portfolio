@@ -190,8 +190,6 @@ section h1 {
   justify-content: space-between;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-right: 40px;
-  margin-bottom: 200px;
 }
 
 .proyecto:hover {
@@ -231,6 +229,20 @@ section h1 {
 .proyecto p {
   font-size: 1rem;
 }
-#experience{
+#experience, #titulos, #proyectos, #sobremi{
   scroll-margin-top: 100px;
+}
+.contenedor-sobremi{
+  display: flex;
+  margin-bottom: 200px;
+}
+.contenedor-sobremi p{
+  font-size: 18px;
+  text-align: left;
+  width: 60%;
+}
+.contenedor-sobremi img{
+  max-height: 300px;
+  max-width: 400px;
+  border-radius: 15px;
 }
