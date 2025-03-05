@@ -6,8 +6,7 @@
     <title>Menú de Productos</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <style>
-
-    * {
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -28,6 +27,9 @@
         position: fixed;
         top: 0;
         z-index: 1000;
+      }
+      ::-webkit-scrollbar {
+        width: 0;
       }
 
       .header-container {
@@ -75,7 +77,7 @@
       .sidebar nav ul li a {
         color: white;
         text-decoration: none;
-        font-size: 30px; 
+        font-size: 30px;
         display: block;
         transition: background-color 0.3s;
         padding: 10px 0;
@@ -84,7 +86,7 @@
       .sidebar nav ul li a:hover {
         background-color: #444;
       }
-      
+
       .content {
         margin-left: 25%;
         padding: 20px;
@@ -192,7 +194,7 @@
       axios.get(url).then((response) => {
         const { nameShow, logo } = response.data.data;
         document.getElementById("businessLogo").src = logo;
-        document.getElementById('businessName').textContent = nameShow; 
+        document.getElementById("businessName").textContent = nameShow;
       });
 
       // Función para cargar los productos desde la API
