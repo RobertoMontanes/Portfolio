@@ -190,8 +190,9 @@
         "https://www.numier.com/kiosco/api/business?name=sevillafcespt00101";
 
       axios.get(url).then((response) => {
-        const { logo } = response.data.data;
+        const { nameShow, logo } = response.data.data;
         document.getElementById("businessLogo").src = logo;
+        document.getElementById('businessName').textContent = nameShow; 
       });
 
       // Función para cargar los productos desde la API
