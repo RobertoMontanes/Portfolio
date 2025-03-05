@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú de Productos</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      header {
+        background-color: #d32f2f;
+        color: white;
+        padding: 10px 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .business-name {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .business-logo {
+        width: 50px;
+        height: auto;
+      }
+
+      .sidebar {
+        width: 25%;
+        background-color: #222;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sidebar nav ul {
+        margin-top: 100px;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .sidebar nav ul li {
+        margin: 20px 0;
+      }
+
+      .sidebar nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px; 
+        display: block;
+        transition: background-color 0.3s;
+        padding: 10px 0;
+      }
+
+      .sidebar nav ul li a:hover {
+        background-color: #444;
+      }
+      
+      .content {
+        margin-left: 25%;
+        padding: 20px;
+        flex-grow: 1;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      /* Estilos para la galería de productos */
+      .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos productos por fila */
+        gap: 10px; /* Separación entre los productos */
+        justify-items: center;
+      }
+
+      .product-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px; /* Padding pequeño para que estén casi pegados */
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      .product-card:hover {
+        transform: scale(1.05); /* Efecto hover para resaltar la tarjeta */
+      }
+
+      .product-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse ni deformarse */
+        border-radius: 8px;
+      }
+
+      .product-card h3 {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        text-transform: capitalize;
+      }
+
+      .product-card p {
+        font-size: 16px;
+        color: #777;
+      }
+
+      .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #d32f2f;
+        margin-top: auto; /* Esto empuja el precio hacia abajo */
+      }
+
+      .price span {
+        font-size: 20px;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header con la cinta y el logo -->
+    <header>
+      <div class="header-container">
+        <div id="businessName" class="business-name">Nombre de la tienda</div>
+        <img id="businessLogo" alt="Logo del Sevilla" class="business-logo" />
+      </div>
+    </header>
+
+    <!-- Sidebar Fija -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#bebidas">Bebidas</a></li>
+          <li><a href="#snacks">Snacks</a></li>
+          <li><a href="#comida-rapida">Comida rápida</a></li>
+          <li><a href="#aperitivos">Aperitvos</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content con productos -->
+    <main class="content">
+      <h1>Productos</h1>
+      <div class="product-container" id="productList">
+        <!-- Los productos se cargarán aquí -->
+      </div>
+    </main>
+
+    <script>
+      const url =
+        "https://www.numier.com/kiosco/api/business?name=sevillafcespt00101";
+
+      axios.get(url).then((response) => {
+        const { logo } = response.data.data;
+        document.getElementById("businessLogo").src = logo;
+      });
+
+      // Función para cargar los productos desde la API
+      fetch(
+        "https://www.numier.com/kiosco/api/product?idBusinessInfo=262&lang=es&idParentCategory=0&catalog=R&typeProject=PEDIDOS"
+      )
+        .then((response) => response.json()) // Convertir la respuesta en JSON
+        .then((data) => {
+          const categorias = data.data.content;
+          const productList = document.getElementById("productList");
+
+          categorias.forEach((categoria) => {
+            categoria.products.forEach((producto) => {
+              // Crear la tarjeta del producto
+              const productCard = document.createElement("div");
+              productCard.classList.add("product-card");
+
+              // Datos del producto
+              const productName = producto.name || "Producto sin nombre";
+              const productDescription =
+                producto.description || "Sin descripción";
+              const productPrice = producto.rates[0]?.price
+                ? `$${producto.rates[0].price}`
+                : "Precio no disponible";
+              const productImage =
+                producto.image || "https://via.placeholder.com/150";
+
+              // Llenar la tarjeta del producto con los datos
+              productCard.innerHTML = `
+                <img src="${productImage}" alt="${productName}">
+                <h3>${productName}</h3>
+                <p>${productDescription}</p>
+                <div class="price"><span>${productPrice}</span></div>
+              `;
+
+              // Añadir la tarjeta al contenedor de productos
+              productList.appendChild(productCard);
+            });
+          });
+        })
+        .catch((error) => console.log("Error:", error));
+
+      // Código para realizar el desplazamiento
+      const links = document.querySelectorAll(".sidebar a");
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault(); // Evita el comportamiento por defecto del enlace
+
+          // Obtener el destino al que apunta el enlace
+          const targetId = this.getAttribute("href").substring(1); // Obtener el ID sin el #
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            // Desplazar 120px hacia abajo del elemento
+            window.scrollTo({
+              top: targetElement.offsetTop - 120, // Ajusta el desplazamiento según lo que necesites
+              behavior: "smooth", // Hacer el desplazamiento suave
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
