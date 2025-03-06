@@ -249,20 +249,20 @@ section h1 {
   max-height: 300px;
   max-width: 400px;
   border-radius: 15px;
-  transition: filter 0.3s ease; /* Transición suave al cambiar el filtro */
+  transition: filter 0.3s ease;
 
 }
 
 footer {
 
-  color: #fff; /* Texto en blanco */
+  color: #fff; 
   text-align: center;
   padding: 15px;
   font-size: 14px;
 }
 
 footer a {
-  color: #4DB8FF; /* Color azul para enlaces */
+  color: #4DB8FF;
   text-decoration: none;
 }
 
@@ -271,7 +271,6 @@ footer a:hover {
 }
 
 
-/* Efecto de imagen en blanco y negro al pasar el ratón */
 .contenedor-sobremi img:hover {
-  filter: grayscale(100%); /* Pone la imagen en escala de grises */
+  filter: grayscale(100%); 
 }
