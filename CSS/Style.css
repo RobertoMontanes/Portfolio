@@ -249,6 +249,8 @@ section h1 {
   max-height: 300px;
   max-width: 400px;
   border-radius: 15px;
+  transition: filter 0.3s ease; /* Transición suave al cambiar el filtro */
+
 }
 
 footer {
@@ -268,3 +270,8 @@ footer a:hover {
   text-decoration: underline;
 }
 
+
+/* Efecto de imagen en blanco y negro al pasar el ratón */
+.contenedor-sobremi img:hover {
+  filter: grayscale(100%); /* Pone la imagen en escala de grises */
+}
