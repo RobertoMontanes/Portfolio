@@ -5,12 +5,14 @@
   font-family: "Roboto Flex", sans-serif;
   letter-spacing: 1px;
 }
-html{
+html {
   scroll-behavior: smooth;
-  
 }
 
-  
+::-webkit-scrollbar {
+  width: 0;
+}
+
 body {
   background: radial-gradient(ellipse at top, #24408a 0%, #161c37 40%);
   color: white;
@@ -132,13 +134,13 @@ main .iconos img {
   cursor: pointer;
   transition-duration: 0.5s;
 }
-main .iconos img:hover{
+main .iconos img:hover {
   transform: scale(1.5);
 }
 
 main .iconos {
   display: flex;
-  gap: 30px;
+  gap: 1.5rem;
   justify-content: center;
 }
 section h1 {
@@ -172,8 +174,6 @@ section h1 {
 .experiencia .titulos a {
   color: #fff;
 }
-
-
 
 .contenedor-proyectos {
   display: flex;
@@ -219,7 +219,7 @@ section h1 {
   padding: 10px 0;
 }
 
-.proyecto h3, 
+.proyecto h3,
 .proyecto p {
   margin-top: 40px;
   margin-left: 0;
@@ -236,15 +236,17 @@ section h1 {
 .proyecto p {
   font-size: 1rem;
 }
-#experience, #titulos, #proyectos, #sobremi{
+#experience,
+#titulos,
+#proyectos,
+#sobremi {
   scroll-margin-top: 100px;
 }
-.contenedor-sobremi{
+.contenedor-sobremi {
   display: flex;
   margin-bottom: 200px;
-  
 }
-.contenedor-sobremi p{
+.contenedor-sobremi p {
   margin-left: 66px;
 
   font-size: 18px;
@@ -252,24 +254,22 @@ section h1 {
   width: 60%;
   padding-right: 30px;
 }
-.contenedor-sobremi img{
+.contenedor-sobremi img {
   max-height: 300px;
   max-width: 400px;
   border-radius: 15px;
   transition: filter 0.3s ease;
-
 }
 
 footer {
-
-  color: #fff; 
+  color: #fff;
   text-align: center;
   padding: 15px;
   font-size: 14px;
 }
 
 footer a {
-  color: #4DB8FF;
+  color: #4db8ff;
   text-decoration: none;
 }
 
@@ -277,7 +277,12 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
 .contenedor-sobremi img:hover {
-  filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+@media (max-width: 700px) {
+  .contenedor-sobremi p {
+    margin: 0;
+  }
 }
