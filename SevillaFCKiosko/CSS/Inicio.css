@@ -56,7 +56,6 @@ hr {
   border-radius: 50%;
 }
 
-
 .cart-container {
   display: flex;
   justify-content: center;
@@ -106,7 +105,6 @@ hr {
   list-style-type: none;
   padding: 0;
   width: 100%;
-  
 }
 
 .sidebar nav .navegador li {
@@ -232,12 +230,11 @@ h2 {
   font-size: 14px;
   display: flex;
   align-items: center;
-  
 }
 #bebidas,
 #snacks,
 #comida-rapida,
-#aperitivos{
+#aperitivos {
   scroll-margin-top: 120px;
 }
 .cart-item button {
@@ -254,13 +251,13 @@ h2 {
   background-color: #b71c1c;
 }
 
-#emptyCartButton, #checkoutButton {
+#emptyCartButton,
+#checkoutButton {
   padding: 12px 20px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  
-  
+
   transition: 0.3s ease;
 }
 
@@ -285,7 +282,6 @@ h2 {
 #checkoutButton:hover {
   background-color: #388e3c;
 }
-
 
 #closeCartButton {
   background-color: transparent;
@@ -345,7 +341,7 @@ h2 {
     margin-bottom: 10px;
   }
 }
-#cartSummary p{
+#cartSummary p {
   background-color: #f44336;
   color: white;
   border: none;
@@ -355,15 +351,12 @@ h2 {
   font-size: 16px;
   width: 48.5%;
   text-align: center;
-  
 }
-#cartSummary p:hover{
+#cartSummary p:hover {
   background-color: #d32f2f;
-
 }
-aside nav .volver-inicio{
+aside nav .volver-inicio {
   background-color: red;
-  padding: 10px 0px;
   width: 80%;
   border-radius: 15px;
   border: 2px solid #000;
@@ -374,12 +367,15 @@ aside nav .volver-inicio{
   cursor: pointer;
   transition: 0.5s ease;
 }
-aside nav .volver-inicio:hover{
+aside nav .volver-inicio:hover {
   box-shadow: 0 0 10px;
   background-color: rgb(233, 7, 7);
 }
-aside nav .volver-inicio a{
-  text-decoration: none;
+aside nav .volver-inicio a li {
+  padding: 10px 0px;
   font-size: 24px;
   color: #fff;
+}
+aside nav .volver-inicio a {
+  text-decoration: none;
 }
