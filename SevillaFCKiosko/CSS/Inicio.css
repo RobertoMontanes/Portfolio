@@ -19,6 +19,13 @@ html {
   scroll-behavior: smooth;
 }
 
+#bebidas,
+#snacks,
+#comida-rapida,
+#aperitivos {
+  scroll-margin-top: 140px;
+}
+
 header {
   background-color: #d32f2f;
   color: white;
@@ -174,6 +181,32 @@ h1 {
   font-weight: bold;
   color: #d32f2f;
 }
+
+.add-to-cart {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.add-to-cart:hover {
+  background-color: #388e3c;
+}
+
+.add-to-cart:active {
+  transform: scale(0.98);
+}
+
+#cartItems {
+  margin-bottom: 20px;
+  
+}
 .cart-modal {
   display: none;
   position: fixed;
@@ -190,7 +223,8 @@ h1 {
   position: relative;
   padding: 20px;
   background-color: #fff;
-  max-width: 500px;
+  max-width: 600px;
+  
   margin: 100px auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -229,12 +263,7 @@ h2 {
   display: flex;
   align-items: center;
 }
-#bebidas,
-#snacks,
-#comida-rapida,
-#aperitivos {
-  scroll-margin-top: 120px;
-}
+
 .cart-item button {
   background-color: #d32f2f;
   color: white;
@@ -274,7 +303,7 @@ h2 {
   background-color: #4caf50;
   color: white;
   border: none;
-  width: 220px; 
+  width: 220px;
 }
 
 #checkoutButton:hover {
@@ -295,34 +324,6 @@ h2 {
   color: #d32f2f;
 }
 
-.add-to-cart {
-  
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.add-to-cart:hover {
-  background-color: #388e3c;
-}
-
-.add-to-cart:active {
-  transform: scale(0.98);
-}
-
-/* Estilos generales del carrito */
-#cartItems {
-  margin-bottom: 20px;
-}
-
-/* Ajustes responsive */
 @media (max-width: 768px) {
   .cart-modal-content {
     width: 90%;
@@ -342,12 +343,10 @@ h2 {
 #cartSummary p {
   background-color: #f44336;
   color: white;
-  border: none;
   margin-bottom: 30px;
-  padding: 12px 20px;
+  padding: 12px 40px;
   border-radius: 8px;
   font-size: 16px;
-  width: 48.5%;
   text-align: center;
 }
 #cartSummary p:hover {
@@ -378,9 +377,9 @@ aside nav .volver-inicio a li {
 aside nav .volver-inicio a {
   text-decoration: none;
 }
-main .product-container .product-card h3{
+main .product-container .product-card h3 {
   height: 60px;
 }
-main .product-container .product-card p{
+main .product-container .product-card p {
   height: 80px;
 }
