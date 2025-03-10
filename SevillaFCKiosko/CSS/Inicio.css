@@ -370,6 +370,7 @@ aside nav .volver-inicio {
 aside nav .volver-inicio:hover {
   box-shadow: 0 0 10px;
   background-color: rgb(233, 7, 7);
+  
 }
 aside nav .volver-inicio a li {
   padding: 10px 0px;
@@ -384,4 +385,7 @@ main .product-container .product-card h3 {
 }
 main .product-container .product-card p {
   height: 80px;
+}
+aside nav .volver-inicio a li:hover {
+  text-shadow: 0 0 8px #fff;
 }
