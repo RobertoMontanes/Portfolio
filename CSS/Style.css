@@ -1,288 +1,94 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto Flex", sans-serif;
-  letter-spacing: 1px;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  width: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: radial-gradient(ellipse at top, #24408a 0%, #161c37 40%);
-  color: white;
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-  margin: 0;
+    position: relative; /* Para que el pseudo-elemento se ubique correctamente */
+    background-image: url("https://www.numier.com/carta/imagenfondos/5374/ImagenPrecarta_sinlogo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0; /* Asegura que el pseudo-elemento esté encima de cualquier fondo */
+}
+
+body::before {
+    content: ""; /* Crea el pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* Filtro blanco con opacidad */
+    z-index: -1; /* Coloca el filtro detrás del contenido */
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  padding: 15px;
-  font-size: 20px;
-  z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
-header .contenedor-header {
-  width: 100%;
-  max-height: 40px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+header img {
+    max-width: 300px;
 }
 
-header .informacion-personal img {
-  height: 7vh;
-  width: 7vh;
-  margin-left: 5px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: space-around;
+#businessName {
+    font-size: 50px;
+    margin-top: 100px;
 }
 
-header .informacion-personal {
-  color: #f0f8ff;
-  display: flex;
-  margin: 20px;
-  align-items: center;
-  margin-left: -100px;
+main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header .informacion-personal p {
-  margin-left: 10px;
+main .boton a {
+    text-decoration: none;
+    background-color: red;
+    font-size: 40px;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
 }
 
-header nav {
-  width: 30%;
-  margin-right: -350px;
-}
-
-header nav ul li {
-  list-style: none;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  font-size: 20px;
-  padding: 10px;
-  white-space: nowrap;
-  color: #e0f2ff;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-main,
-section {
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 120px;
-  width: 70%;
-}
-
-main .profesion {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 24px;
-}
-
-main .profesion h1 {
-  color: yellow;
-}
-
-main .botones {
-  margin: 30px auto;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-main .botones a {
-  font-size: 20px;
-  border: 3px solid black;
-  border-radius: 50px;
-  padding: 10px 52px;
-  background-color: #24408a;
-  text-decoration: none;
-  color: #e0f2ff;
-  display: inline-block;
-  transition: 0.5s ease;
-}
-
-main .botones a:hover {
-  color: #fff;
-  border: 3px solid #fff;
-  text-decoration: none;
-}
 main .iconos img {
-  max-width: 50px;
-  cursor: pointer;
-  transition-duration: 0.5s;
-}
-main .iconos img:hover {
-  transform: scale(1.5);
+    margin-top: 20px;
+    max-width: 70px;
 }
 
 main .iconos {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-}
-section h1 {
-  text-align: left;
-  font-size: 35px;
-  padding-bottom: 50px;
-}
-.experiencia .trabajos {
-  margin: 0 auto;
-  text-align: left;
-
-  width: 90%;
-  border-left: 2px solid #00cfff;
-}
-.experiencia .trabajos h2 {
-  margin-left: 30px;
-  margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.experiencia .titulos {
-  margin: 0 auto;
-  text-align: left;
-
-  width: 90%;
-  border-left: 2px solid #00cfff;
-}
-.experiencia .titulos h2 {
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-.experiencia .titulos a {
-  color: #fff;
+footer{
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    
 }
 
-.contenedor-proyectos {
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-left: 66px;
+footer p #punto{
+    color:aqua;
 }
-
-.proyecto {
-  width: 300px;
-  height: 400px;
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.proyecto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.proyecto img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.proyecto a {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 10px 0;
-}
-
-.proyecto h3,
-.proyecto p {
-  margin-top: 40px;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0 10px;
-  text-align: center;
-  color: #000;
-}
-
-.proyecto h3 {
-  font-size: 1.2rem;
-}
-
-.proyecto p {
-  font-size: 1rem;
-}
-#experience,
-#titulos,
-#proyectos,
-#sobremi {
-  scroll-margin-top: 100px;
-}
-.contenedor-sobremi {
-  display: flex;
-  margin-bottom: 200px;
-}
-.contenedor-sobremi p {
-  margin-left: 66px;
-
-  font-size: 18px;
-  text-align: left;
-  width: 60%;
-  padding-right: 30px;
-}
-.contenedor-sobremi img {
-  max-height: 300px;
-  max-width: 400px;
-  border-radius: 15px;
-  transition: filter 0.3s ease;
-}
-
-footer {
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-}
-
-footer a {
-  color: #4db8ff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.contenedor-sobremi img:hover {
-  filter: grayscale(100%);
-}
-
-@media (max-width: 700px) {
-  .contenedor-sobremi p {
-    margin: 0;
-  }
+footer p{
+    padding: 10px;
+    padding-left: 25px;
 }
