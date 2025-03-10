@@ -357,3 +357,25 @@ h2 {
   background-color: #d32f2f;
 
 }
+aside nav .volver-inicio{
+  background-color: red;
+  padding: 0px 20px;
+  width: 80%;
+  border-radius: 15px;
+  border: 2px solid #000;
+  text-align: center;
+  list-style: none;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+aside nav .volver-inicio:hover{
+  box-shadow: 0 0 10px;
+  background-color: rgb(233, 7, 7);
+}
+aside nav .volver-inicio a{
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+}
