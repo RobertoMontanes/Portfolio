@@ -357,12 +357,14 @@ aside nav .volver-inicio {
   width: 80%;
   border-radius: 15px;
   border: 2px solid #000;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   list-style: none;
   position: absolute;
   bottom: 30px;
   cursor: pointer;
+
   transition: 0.5s ease;
 }
 aside nav .volver-inicio:hover {
