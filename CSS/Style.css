@@ -335,5 +335,7 @@ footer a:hover {
     text-decoration: none;
     text-shadow: 0 0 9px #fff;
   }
-  
+  main .profesion {
+    width: 100%;
+  }
 }
