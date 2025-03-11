@@ -1,0 +1,66 @@
+body {
+    background-color: #000;
+    overflow: hidden;
+  }
+
+  .pacman {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#f1d76b, #f1c71c);
+    border-radius: 50%;
+    animation: mover-pacman-derecha 0s linear infinite;
+  }
+  .fantasma{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#f1d76b, #f1c71c);
+    border-radius: 50%;
+    background-color: #fff;
+    animation: mover-pacman-derecha 0s linear infinite;
+  }
+
+  .ojo {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 20px;
+    right: 25px;
+  }
+
+  .boca {
+    position: absolute;
+    top: 25px;
+    right: -2px;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 52px solid #000;
+    animation: movimiento-boca 0.29s infinite alternate;
+  }
+
+  @keyframes mover-pacman-derecha {
+        0% {
+            left: -100px;
+        }
+        100% {
+            left: 100vw;
+        }
+    }
+
+    @keyframes movimiento-boca {
+        0% {
+            clip-path: polygon(0% 100%, 100% 100%, 0% 100%);
+            
+        }
+        100% {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+    }
