@@ -6,20 +6,75 @@ body {
   .pacman {
     position: absolute;
     top: 50%;
-    left: 0;
     width: 100px;
     height: 100px;
     background: radial-gradient(#f1d76b, #f1c71c);
     border-radius: 50%;
     animation: mover-pacman-derecha 0s linear infinite;
   }
-  .fantasma{
+  .fantasma-rojo{
     position: absolute;
-    top: 30%;
-    left: 0;
+    top: 50%;
+    left: 15%;
     width: 100px;
     height: 100px;
-    background: radial-gradient(#f1d76b, #f1c71c);
+    background: radial-gradient(#ff0000, #cc0000);
+    border-radius: 50%;
+    background-color: #fff;
+    animation: mover-fantasma-rojo 0s linear infinite;
+  }
+  .fantasma-rojo .ojos1{
+    width: 30px;
+
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    border-radius: 50%;
+    height: 40px;
+    background-color: #fff;
+
+  }
+  .fantasma-rojo .ojos2{
+    width: 20px;
+
+    position: absolute;
+    top: 20%;
+    right: 13%;
+    border-radius: 50%;
+    border: 10px solid black;
+    height: 20px;
+    background-color: #fff;
+  }
+  
+  .fantasma-rosa{
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#ff66b2, #ff3385);
+    border-radius: 50%;
+    background-color: #fff;
+    animation: mover-pacman-derecha 0s linear infinite;
+  }
+  .fantasma-celeste{
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#87ceeb, #5bb8e9);
+    border-radius: 50%;
+    background-color: #fff;
+    animation: mover-pacman-derecha 0s linear infinite;
+  }
+  .fantasma-naranja{
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#ff9900, #e68500);
     border-radius: 50%;
     background-color: #fff;
     animation: mover-pacman-derecha 0s linear infinite;
@@ -47,6 +102,14 @@ body {
   }
 
   @keyframes mover-pacman-derecha {
+        0% {
+            left: -250px;
+        }
+        100% {
+            left: 85vw;
+        }
+    }
+    @keyframes mover-fantasma-rojo {
         0% {
             left: -100px;
         }
