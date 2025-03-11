@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animación Pac-Man</title>
+    <style>
+      body {
+        background-color: black;
+        overflow: hidden;
+      }
+
+      .pacman {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(#f1d76b, #f1c71c);
+        border-radius: 50%;
+        animation: mover-pacman-derecha 0s linear infinite;
+      }
+
+      .ojo {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        background-color: #000;
+        border-radius: 50%;
+        top: 20px;
+        right: 25px;
+      }
+
+      .boca {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 30px solid transparent;
+        border-right: 45px solid #000;
+        animation: movimiento-boca 1s infinite alternate;
+      }
+
+      @keyframes mover-pacman-derecha {
+            0% {
+                left: -100px;
+            }
+            100% {
+                left: 100vw;
+            }
+        }
+
+        @keyframes movimiento-boca {
+            0%, 100% {
+                clip-path: polygon(0% 100%, 100% 50%, 0% 100%);
+                
+            }
+            50% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="pacman">
+      <div class="ojo"></div>
+      <div class="boca"></div>
+    </div>
+  </body>
+</html>
