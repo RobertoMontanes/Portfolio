@@ -6,7 +6,7 @@
     <title>Animación Pac-Man</title>
     <style>
       body {
-        background-color: black;
+        background-color: #000;
         overflow: hidden;
       }
 
@@ -18,7 +18,7 @@
         height: 100px;
         background: radial-gradient(#f1d76b, #f1c71c);
         border-radius: 50%;
-        animation: mover-pacman-derecha 6s linear infinite;
+        animation: mover-pacman-derecha 5s linear infinite;
       }
 
       .ojo {
@@ -34,11 +34,11 @@
       .boca {
         position: absolute;
         top: 25px;
-        right: 0;
+        right: -2px;
         border-top: 25px solid transparent;
         border-bottom: 25px solid transparent;
         border-left: 30px solid transparent;
-        border-right: 45px solid #000;
+        border-right: 52px solid #000;
         animation: movimiento-boca 1s infinite alternate;
       }
 
@@ -53,10 +53,10 @@
 
         @keyframes movimiento-boca {
             0%, 100% {
-                clip-path: polygon(0% 100%, 100% 50%, 0% 100%);
+                clip-path: polygon(0% 100%, 100% 100%, 0% 100%);
                 
             }
-            50% {
+            25% {
                 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
             }
         }
