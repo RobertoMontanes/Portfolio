@@ -39,7 +39,7 @@
         border-bottom: 25px solid transparent;
         border-left: 30px solid transparent;
         border-right: 52px solid #000;
-        animation: movimiento-boca 1s infinite alternate;
+        animation: movimiento-boca 0.29s infinite alternate;
       }
 
       @keyframes mover-pacman-derecha {
@@ -52,11 +52,11 @@
         }
 
         @keyframes movimiento-boca {
-            0%, 100% {
+            0% {
                 clip-path: polygon(0% 100%, 100% 100%, 0% 100%);
                 
             }
-            25% {
+            100% {
                 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
             }
         }
