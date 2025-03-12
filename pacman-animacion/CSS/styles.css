@@ -282,9 +282,9 @@ body {
   animation: movimiento-boca 0.29s infinite alternate;
 }
 
-@keyframes mover-pacman-derecha {
+@keyframes mover-fantasma-naranja  {
   0% {
-    left: -850px;
+    left: -900px;
   }
   100% {
     left: 140vw;
@@ -292,7 +292,7 @@ body {
 }
 @keyframes mover-fantasma-rojo {
   0% {
-    left: -550px;
+    left: -750px;
   }
   100% {
     left: 155vw;
@@ -301,7 +301,7 @@ body {
 
 @keyframes mover-fantasma-rosa {
   0% {
-    left: -400px;
+    left: -600px;
   }
   100% {
     left: 170vw;
@@ -310,19 +310,19 @@ body {
 
 @keyframes mover-fantasma-celeste {
   0% {
-    left: -250px;
+    left: -450px;
   }
   100% {
     left: 185vw;
   }
 }
 
-@keyframes mover-fantasma-naranja {
+@keyframes mover-pacman-derecha {
   0% {
     left: -100px;
   }
   100% {
-    left: 200vw;
+    left: 185vw;
   }
 }
 @keyframes movimiento-pies-fantasma-rojo{
