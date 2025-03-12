@@ -22,8 +22,7 @@ body {
   height: 100px;
   border-radius: 50px 50px 5px 5px;
   background-color: #fff;
-  animation: mover-fantasma-rojo 10s linear infinite, cambiar-color-fantasma-rojo 2s infinite linear;
-  animation-delay: 0s, 5s;  
+  animation: mover-fantasma-rojo 10s linear infinite, cambiar-color-fantasma-rojo 10s infinite linear;
 }
 .fantasma-rojo .pies{
   animation: movimiento-pies-fantasma-rojo 0.2s infinite;
@@ -87,7 +86,7 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-fantasma-rosa 10s linear infinite, cambiar-color-fantasma-rosa 2s infinite linear 5s;
+  animation: mover-fantasma-rosa 10s linear infinite, cambiar-color-fantasma-rosa 10s infinite linear ;
 }
 .fantasma-rosa .pies{
   width: 32px;
@@ -151,7 +150,7 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-fantasma-celeste 10s linear infinite, cambiar-color-fantasma-celeste 2s infinite linear 5s;
+  animation: mover-fantasma-celeste 10s linear infinite, cambiar-color-fantasma-celeste 10s infinite linear ;
   left: 39%;
 }
 .fantasma-celeste .pies{
@@ -216,7 +215,7 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-fantasma-naranja 10s linear infinite, cambiar-color-fantasma-naranja 2s infinite linear 5s;
+  animation: mover-fantasma-naranja 10s linear infinite, cambiar-color-fantasma-naranja 10s infinite linear ;
 }
 
 .fantasma-naranja .pies{
@@ -294,25 +293,60 @@ body {
 }
 
 @keyframes cambiar-color-fantasma-rojo{
-  0%, 100% {
+  0%{
+    background: radial-gradient(#ff0000, #cc0000);
+  }
+  49%{
+    background: radial-gradient(#ff0000, #cc0000);
+  } 
+  50%{
+    background: #2438B4;  
+  }
+  100% {
     background: #2438B4;
   }
   
 }
 @keyframes cambiar-color-fantasma-rosa{
-  0%, 100% {
+  0%{
+    background: radial-gradient(#ff66b2, #ff3385); 
+  }
+  49%{
+    background: radial-gradient(#ff66b2, #ff3385); 
+  } 
+  50%{
+    background: #2438B4;  
+  }
+  100% {
     background: #2438B4;
   }
-  
 }
 @keyframes cambiar-color-fantasma-celeste{
-  0%, 100% {
+  0%{
+    background: radial-gradient(#87ceeb, #5bb8e9); 
+  }
+  49%{
+    background: radial-gradient(#87ceeb, #5bb8e9); 
+  } 
+  50%{
+    background: #2438B4;  
+  }
+  100% {
     background: #2438B4;
   }
   
 }
 @keyframes cambiar-color-fantasma-naranja{
-  0%, 100% {
+  0%{
+    background: radial-gradient(#ff9900, #e68500); 
+  }
+  49%{
+    background: radial-gradient(#ff9900, #e68500); 
+  } 
+  50%{
+    background: #2438B4;  
+  }
+  100% {
     background: #2438B4;
   }
   
