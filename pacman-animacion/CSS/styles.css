@@ -12,14 +12,18 @@ body {
   border-radius: 50%;
   animation: mover-pacman-derecha 10s linear infinite;
 }
-.fantasma-rojo {
+  
+  .fantasma-rojo {
+  background: radial-gradient(#ff0000, #cc0000);
   position: absolute;
   top: 50%;
+  left: 15%;
   width: 100px;
   height: 100px;
   border-radius: 50px 50px 5px 5px;
   background-color: #fff;
-  animation: mover-fantasma-rojo 10s linear infinite;
+  animation: mover-fantasma-rojo 10s linear infinite, cambiar-color-fantasma-rojo 2s infinite linear 5s;
+  
 }
 .fantasma-rojo .pies{
   animation: movimiento-pies-fantasma-rojo 0.2s infinite;
@@ -76,12 +80,14 @@ body {
 
 .fantasma-rosa {
   position: absolute;
+  background: radial-gradient(#ff66b2, #ff3385); 
+  left: 27%;
   top: 50%;
   width: 100px;
   height: 100px;
   border-radius: 50px 50px 0 0;
-    background-color: #fff;
-  animation: mover-fantasma-rosa 10s linear infinite;
+  background-color: #fff;
+  animation: mover-fantasma-rojo 10s linear infinite, cambiar-color-fantasma-rosa 2s infinite linear 5s;
 }
 .fantasma-rosa .pies{
   width: 32px;
@@ -138,13 +144,15 @@ body {
 
 
 .fantasma-celeste {
+  background: radial-gradient(#87ceeb, #5bb8e9); 
   position: absolute;
   top: 50%;
   width: 100px;
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-fantasma-celeste 10s linear infinite;
+  animation: mover-fantasma-rojo 10s linear infinite, cambiar-color-fantasma-celeste 2s infinite linear 5s;
+  left: 39%;
 }
 .fantasma-celeste .pies{
   width: 32px;
@@ -201,16 +209,16 @@ body {
 }
 .fantasma-naranja {
   position: absolute;
+  background: radial-gradient(#ff9900, #e68500); 
+  left: 51%;
   top: 50%;
   width: 100px;
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-fantasma-naranja 10s linear infinite;
+  animation: mover-fantasma-rojo 10s linear infinite, cambiar-color-fantasma-naranja 2s infinite linear 5s;
 }
-.fantasma-naranja {
-  transform:scaleX(-1);
-}
+
 .fantasma-naranja .pies{
   width: 32px;
   height: 35px;
@@ -285,11 +293,36 @@ body {
   animation: movimiento-boca 0.29s infinite alternate;
 }
 
+@keyframes cambiar-color-fantasma-rojo{
+  0%, 100% {
+    background: #2438B4;
+  }
+  
+}
+@keyframes cambiar-color-fantasma-rosa{
+  0%, 100% {
+    background: #2438B4;
+  }
+  
+}
+@keyframes cambiar-color-fantasma-celeste{
+  0%, 100% {
+    background: #2438B4;
+  }
+  
+}
+@keyframes cambiar-color-fantasma-naranja{
+  0%, 100% {
+    background: #2438B4;
+  }
+  
+}
+
 @keyframes mover-fantasma-naranja  {
   0% {
     left: -900px;
     transform: scaleX(1);
-
+    
   }
   50% {
     left: 140vw;
@@ -307,10 +340,14 @@ body {
   0% {
     left: -750px;
     transform: scaleX(1);
+    
+    
   }
   50%{
     left: 155vw;
     transform: scaleX(1);
+
+
   }
   51%{
     transform: scaleX(-1);
@@ -325,6 +362,7 @@ body {
   0% {
     left: -600px;
     transform: scaleX(1);
+    
   }
   50%{
     left: 170vw;
@@ -410,10 +448,6 @@ body {
 
 
 
-.fantasma-rojo { background: radial-gradient(#ff0000, #cc0000); left: 15%; }
-.fantasma-rosa { background: radial-gradient(#ff66b2, #ff3385); left: 27%; }
-.fantasma-celeste { background: radial-gradient(#87ceeb, #5bb8e9); left: 39%; }
-.fantasma-naranja { background: radial-gradient(#ff9900, #e68500); left: 51%; }
 
 .pacman-title {
   min-width: 700px;
@@ -466,3 +500,4 @@ body {
     transform: translateX(-50%) translateY(0);
   }
 }
+
