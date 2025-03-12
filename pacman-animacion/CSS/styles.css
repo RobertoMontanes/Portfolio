@@ -422,7 +422,7 @@ body {
 
 @keyframes mover-pacman-derecha {
   0% {
-    left: -100px;
+    left: -150px;
     transform: scaleX(1);
   }
   50% {
@@ -430,13 +430,14 @@ body {
     transform: scaleX(1);
   }
   51% {
-    transform: scaleX(-1);
+    transform: scaleX(-1.5) scaleY(1.5); 
   }
   100% {
     left: -100px;
-    transform: scaleX(-1);
+    transform: scaleX(-1.5) scaleY(1.5); 
   }
 }
+
 @keyframes movimiento-pies-fantasma-rojo {
   0% {
     height: 35px;
