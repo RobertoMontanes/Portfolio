@@ -1,129 +1,263 @@
 body {
-    background-color: #000;
-    overflow: hidden;
-  }
+  background-color: #000;
+  overflow: hidden;
+}
 
-  .pacman {
-    position: absolute;
-    top: 50%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(#f1d76b, #f1c71c);
-    border-radius: 50%;
-    animation: mover-pacman-derecha 0s linear infinite;
-  }
-  .fantasma-rojo{
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(#ff0000, #cc0000);
-    border-radius: 50%;
+.pacman {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#f1d76b, #f1c71c);
+  border-radius: 50%;
+  animation: mover-pacman-derecha 0s linear infinite;
+}
+.fantasma-rojo {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 50px 0 0;
+  background-color: #fff;
+  animation: mover-fantasma-rojo 0s linear infinite;
+}
+.fantasma-rojo .ojos1 {
+  width: 25px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.fantasma-rojo .pupil {
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 38px;
+  left: 40px;
+  transform: translate(-50%, -50%);
+}
+.fantasma-rojo .pupil2{
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 38px;
+  left: 75px;
+  transform: translate(-50%, -50%);
+}
+
+.fantasma-rojo .ojos2 {
+  width: 25px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 55px;
+}
+
+.fantasma-rosa {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 50px 0 0;
     background-color: #fff;
-    animation: mover-fantasma-rojo 0s linear infinite;
-  }
-  .fantasma-rojo .ojos1{
-    width: 30px;
+  animation: mover-pacman-derecha 0s linear infinite;
+}
+.fantasma-rosa .ojos1 {
+  width: 25px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
-    position: absolute;
-    top: 20%;
-    left: 13%;
-    border-radius: 50%;
-    height: 40px;
-    background-color: #fff;
+.fantasma-rosa .ojos2 {
+  width: 25px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 55px;
+}
+.fantasma-rosa .pupil {
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 38px;
+  left: 40px;
+  transform: translate(-50%, -50%);
+}
+.fantasma-rosa .pupil2{
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 38px;
+  left: 75px;
+  transform: translate(-50%, -50%);
+}
 
-  }
-  .fantasma-rojo .ojos2{
-    width: 20px;
 
-    position: absolute;
-    top: 20%;
-    right: 13%;
-    border-radius: 50%;
-    border: 10px solid black;
-    height: 20px;
-    background-color: #fff;
-  }
-  
-  .fantasma-rosa{
-    position: absolute;
-    top: 50%;
-    left: 27%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(#ff66b2, #ff3385);
-    border-radius: 50%;
-    background-color: #fff;
-    animation: mover-pacman-derecha 0s linear infinite;
-  }
-  .fantasma-celeste{
-    position: absolute;
-    top: 50%;
-    left: 39%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(#87ceeb, #5bb8e9);
-    border-radius: 50%;
-    background-color: #fff;
-    animation: mover-pacman-derecha 0s linear infinite;
-  }
-  .fantasma-naranja{
-    position: absolute;
-    top: 50%;
-    left: 51%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(#ff9900, #e68500);
-    border-radius: 50%;
-    background-color: #fff;
-    animation: mover-pacman-derecha 0s linear infinite;
-  }
+.fantasma-celeste {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 50px 0 0;
+  background-color: #fff;
+  animation: mover-pacman-derecha 0s linear infinite;
+}
 
-  .ojo {
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    background-color: #000;
-    border-radius: 50%;
-    top: 20px;
-    right: 25px;
+
+.fantasma-celeste .ojos1 {
+  width: 25px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.fantasma-celeste .ojos2 {
+  width: 25px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 55px;
+}
+.fantasma-celeste .pupil {
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 38px;
+  left: 40px;
+  transform: translate(-50%, -50%);
+}
+.fantasma-celeste .pupil2{
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 38px;
+  left: 75px;
+  transform: translate(-50%, -50%);
+}
+.fantasma-naranja {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 50px 0 0;
+  background-color: #fff;
+  animation: mover-pacman-derecha 0s linear infinite;
+}
+.fantasma-naranja .ojos1 {
+  width: 25px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.fantasma-naranja .ojos2 {
+  width: 25px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 55px;
+}
+.fantasma-naranja .pupil {
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 38px;
+  left: 40px;
+  transform: translate(-50%, -50%);
+}
+.fantasma-naranja .pupil2{
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 38px;
+  left: 75px;
+  transform: translate(-50%, -50%);
+}
+
+.ojo {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 20px;
+  right: 25px;
+}
+
+.boca {
+  position: absolute;
+  top: 25px;
+  right: -2px;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 52px solid #000;
+  animation: movimiento-boca 0.29s infinite alternate;
+}
+
+@keyframes mover-pacman-derecha {
+  0% {
+    left: -250px;
   }
-
-  .boca {
-    position: absolute;
-    top: 25px;
-    right: -2px;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 30px solid transparent;
-    border-right: 52px solid #000;
-    animation: movimiento-boca 0.29s infinite alternate;
+  100% {
+    left: 85vw;
   }
+}
+@keyframes mover-fantasma-rojo {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
 
-  @keyframes mover-pacman-derecha {
-        0% {
-            left: -250px;
-        }
-        100% {
-            left: 85vw;
-        }
-    }
-    @keyframes mover-fantasma-rojo {
-        0% {
-            left: -100px;
-        }
-        100% {
-            left: 100vw;
-        }
-    }
+@keyframes movimiento-boca {
+  0% {
+    clip-path: polygon(0% 100%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
 
-    @keyframes movimiento-boca {
-        0% {
-            clip-path: polygon(0% 100%, 100% 100%, 0% 100%);
-            
-        }
-        100% {
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        }
-    }
+.fantasma-rojo { background: radial-gradient(#ff0000, #cc0000); left: 15%; }
+.fantasma-rosa { background: radial-gradient(#ff66b2, #ff3385); left: 27%; }
+.fantasma-celeste { background: radial-gradient(#87ceeb, #5bb8e9); left: 39%; }
+.fantasma-naranja { background: radial-gradient(#ff9900, #e68500); left: 51%; }
