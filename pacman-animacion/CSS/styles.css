@@ -10,7 +10,7 @@ body {
   height: 100px;
   background: radial-gradient(#f1d76b, #f1c71c);
   border-radius: 50%;
-  animation: mover-pacman-derecha 0s linear infinite;
+  animation: mover-pacman-derecha 5s linear infinite;
 }
 .fantasma-rojo {
   position: absolute;
@@ -19,7 +19,7 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-fantasma-rojo 0s linear infinite;
+  animation: mover-fantasma-rojo 5s linear infinite;
 }
 .fantasma-rojo .ojos1 {
   width: 25px;
@@ -68,7 +68,7 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
     background-color: #fff;
-  animation: mover-pacman-derecha 0s linear infinite;
+  animation: mover-fantasma-rosa 5s linear infinite;
 }
 .fantasma-rosa .ojos1 {
   width: 25px;
@@ -118,7 +118,7 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-pacman-derecha 0s linear infinite;
+  animation: mover-fantasma-celeste 5s linear infinite;
 }
 
 
@@ -168,7 +168,7 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-pacman-derecha 0s linear infinite;
+  animation: mover-fantasma-naranja 5s linear infinite;
 }
 .fantasma-naranja .ojos1 {
   width: 25px;
@@ -233,20 +233,48 @@ body {
 
 @keyframes mover-pacman-derecha {
   0% {
-    left: -250px;
+    left: -850px;
   }
   100% {
-    left: 85vw;
+    left: 140vw;
   }
 }
 @keyframes mover-fantasma-rojo {
   0% {
+    left: -550px;
+  }
+  100% {
+    left: 155vw;
+  }
+}
+
+@keyframes mover-fantasma-rosa {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 170vw;
+  }
+}
+
+@keyframes mover-fantasma-celeste {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 185vw;
+  }
+}
+
+@keyframes mover-fantasma-naranja {
+  0% {
     left: -100px;
   }
   100% {
-    left: 100vw;
+    left: 200vw;
   }
 }
+
 
 @keyframes movimiento-boca {
   0% {
