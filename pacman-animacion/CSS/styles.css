@@ -363,3 +363,42 @@ body {
 .fantasma-rosa { background: radial-gradient(#ff66b2, #ff3385); left: 27%; }
 .fantasma-celeste { background: radial-gradient(#87ceeb, #5bb8e9); left: 39%; }
 .fantasma-naranja { background: radial-gradient(#ff9900, #e68500); left: 51%; }
+
+.pacman-title {
+  min-width: 700px;
+  font-family: "Ewert", serif;
+  color: #ffcc00;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: parpadeo 1s infinite, mover-titulo 5s linear infinite;
+  background-color: #f00;
+  border-radius: 15px;
+  box-shadow: 0 0 100px #fff;
+}
+
+@keyframes parpadeo {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.5;
+  }
+}
+
+
+@keyframes mover-titulo {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
