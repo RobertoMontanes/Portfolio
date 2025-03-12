@@ -375,10 +375,23 @@ body {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  animation: parpadeo 1s infinite, mover-titulo 5s linear infinite;
-  background-color: #f00;
+  animation: parpadeo 2s infinite, mover-titulo 5s linear infinite;
+  background-color: #800000;
+  user-select: none;
   border-radius: 15px;
-  box-shadow: 0 0 100px #fff;
+  text-shadow: 10px 0 10px #000;
+}
+.pacman-title::before{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: radial-gradient(circle, #800000 0%, #000 100%);
+  border-radius: 50px;
+  z-index: -1;
+  
 }
 
 @keyframes parpadeo {
