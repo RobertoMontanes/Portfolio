@@ -10,17 +10,29 @@ body {
   height: 100px;
   background: radial-gradient(#f1d76b, #f1c71c);
   border-radius: 50%;
-  animation: mover-pacman-derecha 5s linear infinite;
+  animation: mover-pacman-derecha 0s linear infinite;
 }
 .fantasma-rojo {
   position: absolute;
   top: 50%;
   width: 100px;
   height: 100px;
-  border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 5px 5px;
   background-color: #fff;
-  animation: mover-fantasma-rojo 5s linear infinite;
+  animation: mover-fantasma-rojo 0s linear infinite;
 }
+.fantasma-rojo .pies{
+  width: 32px;
+  height: 35px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 1px;
+  color: #000;
+  box-shadow: 33px 0, 66px 0;
+}
+
 .fantasma-rojo .ojos1 {
   width: 25px;
   height: 35px;
@@ -63,12 +75,23 @@ body {
 
 .fantasma-rosa {
   position: absolute;
-  top: 50%;
+  top: 0%;
   width: 100px;
   height: 100px;
   border-radius: 50px 50px 0 0;
     background-color: #fff;
-  animation: mover-fantasma-rosa 5s linear infinite;
+  animation: mover-fantasma-rosa 0s linear infinite;
+}
+.fantasma-rosa .pies{
+  width: 32px;
+  height: 35px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 1px;
+  color: #000;
+  box-shadow: 33px 0, 66px 0;
 }
 .fantasma-rosa .ojos1 {
   width: 25px;
@@ -118,9 +141,19 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-fantasma-celeste 5s linear infinite;
+  animation: mover-fantasma-celeste 0s linear infinite;
 }
-
+.fantasma-celeste .pies{
+  width: 32px;
+  height: 35px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 1px;
+  color: #000;
+  box-shadow: 33px 0, 66px 0;
+}
 
 .fantasma-celeste .ojos1 {
   width: 25px;
@@ -168,7 +201,18 @@ body {
   height: 100px;
   border-radius: 50px 50px 0 0;
   background-color: #fff;
-  animation: mover-fantasma-naranja 5s linear infinite;
+  animation: mover-fantasma-naranja 0s linear infinite;
+}
+.fantasma-naranja .pies{
+  width: 32px;
+  height: 35px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 1px;
+  color: #000;
+  box-shadow: 33px 0, 66px 0;
 }
 .fantasma-naranja .ojos1 {
   width: 25px;
