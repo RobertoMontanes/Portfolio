@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Roberto Montañés</title>
+    <title>Portfolio Roberto Montañés | Software Developer</title>
     <link rel="stylesheet" href="../CSS/Style.css" />
     <link
       rel="stylesheet"
@@ -16,146 +16,329 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
     />
   </head>
   <body>
+    <!-- Header mejorado con menú hamburguesa para móviles -->
     <header>
       <div class="contenedor-header">
         <div class="informacion-personal">
-          <img src="../IMG/fotito-empresa.jpg" alt="" />
+          <img src="../IMG/fotito-empresa.jpg" alt="Foto de Roberto Montañés" />
           <div class="info">
-            <p>Roberto Montañés</p>
-            <p>Software Developer</p>
+            <p class="nombre">Roberto Montañés</p>
+            <p class="cargo">Software Developer</p>
           </div>
         </div>
         <nav>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#titulos">Títulos</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#sobremi">Sobre Mí</a></li>
+          <button class="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu">
+            <li><a href="#" class="nav-link active">Inicio</a></li>
+            <li><a href="#experience" class="nav-link">Experiencia</a></li>
+            <li><a href="#titulos" class="nav-link">Títulos</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#sobremi" class="nav-link">Sobre Mí</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <div class="profesion">
-        <h1>Software Developer</h1>
-        <h2>Roberto Montañés</h2>
+
+    <!-- Hero section mejorada -->
+    <main class="hero">
+      <div class="hero-content">
+        <div class="profesion">
+          <h1 class="titulo-principal">Software Developer</h1>
+          <h2 class="nombre-principal">Roberto Montañés</h2>
+          <p class="descripcion-hero">Desarrollador Fullstack en formación con pasión por crear soluciones innovadoras</p>
+        </div>
+        <div class="botones">
+          <a target="_blank" href="https://github.com/RobertoMontanes" class="btn btn-primary">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/roberto-monta%C3%B1%C3%A9s-ramos-7743b9200/"
+            class="btn btn-secondary"
+          >
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+          <a
+            target="_blank"
+            href="../../Certificados/CV.pdf"
+            class="btn btn-outline"
+          >
+            <i class="bi bi-file-earmark-person"></i> Ver CV ( actualizar)
+          </a>
+          <a
+            target="_blank"
+            href="../../Certificados/CV.pdf"
+            class="btn btn-outline"
+          >
+            <i class="bi bi-file-earmark-person"></i> Ver CV inglés (no está hecho)
+          </a>
+        </div>
+        <div class="iconos">
+          <div class="icono-item" data-tooltip="Eclipse">
+            <img src="../IMG/eclipseicon.png" alt="Icono Eclipse" />
+          </div>
+          <div class="icono-item" data-tooltip="Visual Studio Code">
+            <img src="../IMG/vscodeicon.png" alt="Icono Visual Studio Code" />
+          </div>
+          <div class="icono-item" data-tooltip="Java">
+            <img src="../IMG/javaicon.png" alt="Icono Java" />
+          </div>
+          <div class="icono-item" data-tooltip="HTML5">
+            <img src="../IMG/htmlicon.png" alt="Icono HTML5" />
+          </div>
+          <div class="icono-item" data-tooltip="CSS3">
+            <img src="../IMG/cssicon.webp" alt="Icono CSS3" />
+          </div>
+          <div class="icono-item" data-tooltip="JavaScript">
+            <img src="../IMG/JS-ICONO.png" alt="Icono JavaScript" />
+          </div>
+          <div class="icono-item" data-tooltip="Git">
+            <img src="../IMG/giticon.png" alt="Icono Git" />
+          </div>
+          <div class="icono-item" data-tooltip="GitHub">
+            <img src="../IMG/githubicon.png" alt="Icono GitHub" />
+          </div>
+          <div class="icono-item" data-tooltip="Spring Boot">
+            <img src="../IMG/Spring_Boot.svg.png" alt="Icono Spring Boot" />
+          </div>
+        </div>
       </div>
-      <div class="botones">
-        <a target="_blank" href="https://github.com/RobertoMontanes">GitHub</a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/roberto-monta%C3%B1%C3%A9s-ramos-7743b9200/"
-          >LinkedIn</a
-        >
-        <a
-          target="_blank"
-          href="../../Certificados/CV.pdf"
-          >CV</a
-        >
-      </div>
-      <div class="iconos">
-        <img src="../IMG/eclipseicon.png" alt="Icono Eclipse" title="Eclipse" />
-        <img src="../IMG/vscodeicon.png" alt="Icono Visual Studio Code" title="Visual Studio Code" />
-        <img src="../IMG/javaicon.png" alt="Icono Java" title="Java" />
-        <img src="../IMG/htmlicon.png" alt="Icono HTML5" title="HTML5" />
-        <img src="../IMG/cssicon.webp" alt="Icono CSS3" title="CSS3" />
-        <img src="../IMG/JS-ICONO.png" alt="Icono JavaScript" title="JavaScript" />
-        <img src="../IMG/giticon.png" alt="Icono Git" title="Git" />
-        <img src="../IMG/githubicon.png" alt="Icono GitHub" title="GitHub" />
-        <img src="../IMG/Spring_Boot.svg.png" alt="Icono Spring Boot" title="Spring Boot" />
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="arrow"></div>
       </div>
     </main>
 
-    <section class="experiencia">
-      <h1 id="experience" class="titulo-secciones">Experiencia</h1>
-      <div class="trabajos">
-        <h2>Técnico de Sistemas y Redes.</h2>
-        <h2>Prácticas Desarrollo de Aplicaciones Multiplataforma.</h2>
+    <!-- Secciones mejoradas con mejor estructura visual -->
+    <section class="experiencia" id="experience">
+      <div class="container">
+        <h1 class="titulo-seccion">Experiencia</h1>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Técnico de Sistemas y Redes</h3>
+              <p>Gestión y mantenimiento de infraestructura tecnológica</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Prácticas Desarrollo de Aplicaciones Multiplataforma</h3>
+              <p>Desarrollo de aplicaciones en entorno empresarial</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="experiencia">
-      <h1 id="titulos" class="titulo-secciones">Títulos</h1>
-      <div class="titulos">
-        <h2>Educación Secundaria Obligatoria (E.S.O) </h2>
-        <h2>Técnico en Sistemas Microinformáticos y Redes.</h2>
-        <h2>Técnico Superior Desarrollo de Aplicaciones Multiplataforma.</h2>
-        <h2>Título Oficial de Idiomas Cambridge <i class="bi bi-arrow-right-short"></i> B1</h2>
-        <a target="_blank" href="../../Certificados/HTML_CSS_Curse.pdf"><h2>Certificado Curso de HTML5 y CSS3 </h2></a>
-        <a target="_blank" href="../../Certificados/certificado_crea_aplicaciones_desde_cero_con_figma.pdf"><h2>Certificado Curso de Creación de aplicaciones desde cero con Figma </h2></a>
-        <a target="_blank" href="../../Certificados/certificado_python.pdf"><h2>Test de Aptitud Python <i class="bi bi-arrow-right-short"></i> B1 </h2></a>
-        <a target="_blank" href="../../Certificados/certificado_curso_de_python__aprende_a_programar_en_python_3.pdf"><h2>Curso Intensivo de Python 3 – 20 horas</h2></a>
+
+    <section class="titulos-section" id="titulos">
+      <div class="container">
+        <h1 class="titulo-seccion">Títulos y Certificaciones</h1>
+        <div class="certificados-grid">
+          <div class="certificado-card">
+            <i class="bi bi-mortarboard-fill"></i>
+            <h3>Educación Secundaria Obligatoria (E.S.O)</h3>
+          </div>
+          <div class="certificado-card">
+            <i class="bi bi-laptop"></i>
+            <h3>Técnico en Sistemas Microinformáticos y Redes</h3>
+          </div>
+          <div class="certificado-card">
+            <i class="bi bi-code-slash"></i>
+            <h3>Técnico Superior Desarrollo de Aplicaciones Multiplataforma</h3>
+          </div>
+          <div class="certificado-card">
+            <i class="bi bi-translate"></i>
+            <h3>Cambridge B1</h3>
+            <p>Inglés</p>
+          </div>
+          <div class="certificado-card">
+            <i class="bi bi-file-earmark-code"></i>
+            <h3>HTML5 y CSS3</h3>
+            <p>Curso certificado</p>
+            <a target="_blank" href="../../Certificados/HTML_CSS_Curse.pdf" class="certificado-link">Ver certificado</a>
+          </div>
+          <div class="certificado-card">
+            <i class="bi bi-palette"></i>
+            <h3>Creación de aplicaciones con Figma</h3>
+            <p>Curso certificado</p>
+            <a target="_blank" href="../../Certificados/certificado_crea_aplicaciones_desde_cero_con_figma.pdf" class="certificado-link">Ver certificado</a>
+          </div>
+          <div class="certificado-card">
+            <i class="bi bi-file-code"></i>
+            <h3>Python B1</h3>
+            <p>Test de Aptitud</p>
+            <a target="_blank" href="../../Certificados/certificado_python.pdf" class="certificado-link">Ver certificado</a>
+          </div>
+          <div class="certificado-card">
+            <i class="bi bi-file-code"></i>
+            <h3>Python 3</h3>
+            <p>Curso Intensivo - 20 horas</p>
+            <a target="_blank" href="../../Certificados/certificado_curso_de_python__aprende_a_programar_en_python_3.pdf" class="certificado-link">Ver certificado</a>
+          </div>
+        </div>
       </div>
     </section>
-    <section>
-        <h1 id="proyectos">Proyectos</h1>
+
+    <section class="proyectos-section" id="proyectos">
+      <div class="container">
+        <h1 class="titulo-seccion">Proyectos</h1>
         <div class="contenedor-proyectos">
-            <div class="proyecto">
-                <a target="_blank" href="../../TetrisGame-main/index.html">    
-                    <img src="../IMG/tetrisgame.png" alt="Tetris Game">
-                    <h3>Tetris Game</h3>
-                    <p>Mini-Juego HTML, CSS y JS con sistema de puntuación</p>
-                </a>
-            </div>
-            <div class="proyecto">
-                <a target="_blank" href="../../Pizzeria2/HTML/Index.html">
-                    <img src="../IMG/pizzeriaMasakali.png" alt="Pizzería Masakali">
-                    <h3>Pizzería Masakali</h3>
-                    <p>Página web dinámica HTML, CSS y JS</p>
-                </a>
-            </div>
-            <div class="proyecto">
-                <a target="_blank" href="../../CuatroEnRaya.zip" download>
-                    <img src="../IMG/javaicon.png" alt="Cuatro En Raya">
-                    <h3>Cuatro en Raya </h3>
-                    <p>Mini-juego en terminal Java</p>
-                </a>
-            </div>
-            <div class="proyecto">
-              <a target="_blank" href="../../SevillaFCKiosko/HTML/Index.html">
-                  <img src="../IMG/sevilla-kiosko.png" alt="Sevilla FC Kiosko">
-                  <h3>Sevilla FC Kiosko</h3>
-                  <p>Página web dinámica que recopila datos a través de una API</p>
-              </a>
+          <div class="proyecto">
+            <a target="_blank" href="../../TetrisGame-main/index.html">    
+              <div class="proyecto-img">
+                <img src="../IMG/tetrisgame.png" alt="Tetris Game">
+              </div>
+              <div class="proyecto-content">
+                <h3>Tetris Game</h3>
+                <p>Mini-Juego HTML, CSS y JS con sistema de puntuación</p>
+                <div class="proyecto-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a target="_blank" href="../../Pizzeria2/HTML/Index.html">
+              <div class="proyecto-img">
+                <img src="../IMG/pizzeriaMasakali.png" alt="Pizzería Masakali">
+              </div>
+              <div class="proyecto-content">
+                <h3>Pizzería Masakali</h3>
+                <p>Página web dinámica HTML, CSS y JS</p>
+                <div class="proyecto-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a target="_blank" href="../../CuatroEnRaya.zip" download>
+              <div class="proyecto-img">
+                <img src="../IMG/javaicon.png" alt="Cuatro En Raya">
+              </div>
+              <div class="proyecto-content">
+                <h3>Cuatro en Raya</h3>
+                <p>Mini-juego en terminal Java</p>
+                <div class="proyecto-tech">
+                  <span>Java</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a target="_blank" href="../../SevillaFCKiosko/HTML/Index.html">
+              <div class="proyecto-img">
+                <img src="../IMG/sevilla-kiosko.png" alt="Sevilla FC Kiosko">
+              </div>
+              <div class="proyecto-content">
+                <h3>Sevilla FC Kiosko</h3>
+                <p>Página web dinámica que recopila datos a través de una API</p>
+                <div class="proyecto-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>API</span>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="proyecto">
             <a target="_blank" href="../../pacman-animacion/HTML/Index.html">
+              <div class="proyecto-img">
                 <img src="../IMG/pacmanimage.png" alt="Animación Pac-Man">
+              </div>
+              <div class="proyecto-content">
                 <h3>Pac Man</h3>
-                <p>Animación con CSS Puro<br>Pantalla de carga Animada</p>
+                <p>Animación con CSS Puro - Pantalla de carga Animada</p>
+                <div class="proyecto-tech">
+                  <span>CSS</span>
+                  <span>Animaciones</span>
+                </div>
+              </div>
             </a>
-        </div>
-        <div class="proyecto">
-                <a target="_blank" href="../../RobertoMontanesRamos.rar" download>
-                <img src="../IMG/cine.jpeg" alt="Animación Pac-Man">
-                <h3>Gestion Cine</h3>
-                <p>Proyecto  gestión cine con Spring boot Java</p>
+          </div>
+          <div class="proyecto">
+            <a target="_blank" href="../../RobertoMontanesRamos.rar" download>
+              <div class="proyecto-img">
+                <img src="../IMG/cine.jpeg" alt="Gestión Cine">
+              </div>
+              <div class="proyecto-content">
+                <h3>Gestión Cine</h3>
+                <p>Proyecto gestión cine con Spring boot Java</p>
+                <div class="proyecto-tech">
+                  <span>Java</span>
+                  <span>Spring Boot</span>
+                </div>
+              </div>
             </a>
+          </div>
         </div>
-        </div>
-    </section>    
-    <section>
-      <h1 id="sobremi">Sobre Mí</h1>
-      <div class="contenedor-sobremi">
-       <p>Soy Roberto Montañés Ramos, estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) en los Salesianos de Triana, con un grado previo en Sistemas Microinformáticos y Redes (SMR). Me apasiona el desarrollo de software y mi objetivo es convertirme en desarrollador Fullstack, creando aplicaciones web y de escritorio funcionales y eficientes. <br><br>
-
-        Tengo experiencia en HTML, CSS y JavaScript, así como en Spring Boot con Java, Python, y conocimientos en bases de datos como PostgreSQL, SQLite y phpMyAdmin. Actualmente, estoy aprendiendo Vue.js para mejorar mis habilidades en frontend. <br>
-        
-        <br><br> Estoy siempre en búsqueda de nuevos retos y oportunidades para seguir aprendiendo y mejorando mis habilidades como programador. 🚀</p>
-        <img src="../IMG/fotito-empresa2.jpg" alt="foto-empresa2">
       </div>
     </section>
+
+    <section class="sobremi-section" id="sobremi">
+      <div class="container">
+        <h1 class="titulo-seccion">Sobre Mí</h1>
+        <div class="contenedor-sobremi">
+          <div class="sobremi-content">
+            <p>Soy Roberto Montañés Ramos, estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) en los Salesianos de Triana, con un grado previo en Sistemas Microinformáticos y Redes (SMR). Me apasiona el desarrollo de software y mi objetivo es convertirme en desarrollador Fullstack, creando aplicaciones web y de escritorio funcionales y eficientes.</p>
+            <p>Tengo experiencia en HTML, CSS y JavaScript, así como en Spring Boot con Java, Python, y conocimientos en bases de datos como PostgreSQL, SQLite y phpMyAdmin. Actualmente, estoy aprendiendo Vue.js para mejorar mis habilidades en frontend.</p>
+            <p>Estoy siempre en búsqueda de nuevos retos y oportunidades para seguir aprendiendo y mejorando mis habilidades como programador. 🚀</p>
+            <div class="habilidades">
+              <h3>Tecnologías y Habilidades</h3>
+              <div class="habilidades-list">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Git</span>
+                <span>PostgreSQL</span>
+                <span>SQLite</span>
+                <span>Vue.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="sobremi-img">
+            <img src="../IMG/fotito-empresa2.jpg" alt="Foto de Roberto Montañés">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <p>&copy; 2025 Roberto Montañés Ramos | Desarrollador en formación</p>
-      <p>📧 Correo: <a href="mailto:rmr15092004@gmail.com">rmr15092004@gmail.com</a></p>
-      <p>📍 Ubicación: Sevilla, España</p>
-  </footer>
-  
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>&copy; 2025 Roberto Montañés Ramos | Desarrollador en formación</p>
+            <p>📧 Correo: <a href="mailto:rmr15092004@gmail.com">rmr15092004@gmail.com</a></p>
+            <p>📍 Ubicación: Sevilla, España</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com/RobertoMontanes" target="_blank" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/roberto-monta%C3%B1%C3%A9s-ramos-7743b9200/" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/Index.js"></script>
   </body>
 </html>
-
