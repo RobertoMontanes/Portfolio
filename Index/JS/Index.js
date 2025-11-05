@@ -1,6 +1,4 @@
-// JavaScript para funcionalidades mejoradas
 document.addEventListener("DOMContentLoaded", function () {
-  // Menú hamburguesa para móviles
   const menuToggle = document.querySelector(".menu-toggle");
   const menu = document.querySelector(".menu");
 
@@ -11,20 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Cerrar menú al hacer clic en un enlace
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
     link.addEventListener("click", function () {
       menu.classList.remove("active");
       menuToggle.classList.remove("active");
 
-      // Actualizar enlace activo
       navLinks.forEach((l) => l.classList.remove("active"));
       this.classList.add("active");
     });
   });
 
-  // Scroll suave para enlaces internos
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -42,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Animación de aparición al hacer scroll
   const observerOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -50px 0px",
@@ -56,14 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, observerOptions);
 
-  // Observar elementos para animación
   document
     .querySelectorAll(".proyecto, .certificado-card, .timeline-item")
     .forEach((el) => {
       observer.observe(el);
     });
 
-  // Actualizar enlace activo al hacer scroll
   window.addEventListener("scroll", function () {
     let current = "";
     const sections = document.querySelectorAll("section");
