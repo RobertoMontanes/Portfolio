@@ -90,8 +90,8 @@ Mis certificaciones y logros profesionales están disponibles en la carpeta [Cer
 ¿Interesado en colaborar o conocer más sobre mis proyectos? 
 
 - 💼 GitHub: [@RobertoMontanes](https://github.com/RobertoMontanes)
-- 📧 Email: [Tu email aquí]
-- 🔗 LinkedIn: [Tu perfil aquí]
+- 📧 Email: [rmr15092004@gmail.com](mailto:rmr15092004@gmail.com)
+- 🔗 LinkedIn: [RobertoMontanes](https://www.linkedin.com/in/roberto-monta%C3%B1%C3%A9s-ramos-7743b9200/)
 
 ---
 
