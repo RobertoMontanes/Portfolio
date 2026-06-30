@@ -1,109 +1,93 @@
+# 👨‍💻 Portafolio — Roberto Montañés Ramos
 
-# 👨‍💻 Portfolio - Roberto Montañés Ramos
-
-¡Bienvenido a mi portafolio de proyectos! Aquí encontrarás una colección de mis trabajos en desarrollo de software, diseño web y aplicaciones interactivas.
-
----
-
-## 📂 Proyectos Destacados
-
-### 🎮 TetrisGame
-Implementación del clásico juego Tetris con funcionalidades modernas. 
-
-**Tecnologías:** JavaScript, HTML5, CSS3
-
-[Ver proyecto →](./TetrisGame-main)
+¡Hola! Soy Roberto Montañés, desarrollador apasionado por la web, los videojuegos y las aplicaciones interactivas. En este repositorio comparto una selección de proyectos personales y ejemplos técnicos que muestran mis habilidades en frontend, desarrollo de juegos y Java.
 
 ---
 
-### 🔴 Cuatro en Raya
-Juego interactivo del clásico "Conecta 4" con inteligencia artificial.
+## ✨ Resumen rápido
 
-**Características:**
-- Modo jugador vs jugador
-- Interfaz intuitiva
-- Lógica de juego optimizada
-
-[Ver proyecto →](./CuatroEnRaya)
+- Lenguajes principales: JavaScript, HTML, CSS, Java
+- Enfoque: proyectos interactivos y juegos, interfaces responsivas y buenas prácticas en frontend
+- Contenido: demos, código fuente y recursos para ejecutar los proyectos localmente
 
 ---
 
-### 🍕 Pizzeria2
-Sistema de gestión para una pizzería con interfaz web completa.
+## 🗂️ Proyectos destacados
 
-**Funcionalidades:**
-- Gestión de pedidos
-- Catálogo de productos
-- Panel de administración
+A continuación tienes una lista resumida de los proyectos incluidos en este repositorio. Pulsa el enlace para ir a la carpeta de cada proyecto.
 
-[Ver proyecto →](./Pizzeria2)
+| Proyecto | Qué es | Tecnologías |
+|---|---:|---|
+| 🎮 TetrisGame | Implementación del clásico Tetris con mejoras modernas. | JavaScript, HTML5, CSS3 |
+| 🔴 Cuatro en Raya | Juego "Conecta 4" con lógica de juego optimizada y opciones de juego local. | JavaScript, HTML5, CSS3 |
+| 🍕 Pizzeria2 | Pequeño sistema de gestión de pedidos para una pizzería con panel de administración. | Java, HTML, CSS |
+| ⚽ Sevilla FC Kiosko | Interfaz táctil tipo kiosko con diseño responsive. | HTML, CSS, JavaScript |
+| 👻 Pacman Animación | Animación interactiva inspirada en Pacman. | HTML5, CSS3, JavaScript |
+| 🌐 Index Personal | Página índice con mi presentación y enlaces a proyectos. | HTML, CSS |
 
----
-
-### ⚽ Sevilla FC Kiosko
-Aplicación de kiosko interactivo para el Sevilla FC.
-
-**Características:**
-- Interfaz táctil
-- Información en tiempo real
-- Diseño responsive
-
-[Ver proyecto →](./SevillaFCKiosko)
-
----
-
-### 👻 Pacman Animación
-Animación interactiva del clásico Pacman con CSS y JavaScript.
-
-**Tecnologías:** HTML5, CSS3, JavaScript
-
-[Ver proyecto →](./pacman-animacion)
+Visita las carpetas:
+- [TetrisGame →](./TetrisGame-main)
+- [Cuatro en Raya →](./CuatroEnRaya)
+- [Pizzeria2 →](./Pizzeria2)
+- [Sevilla FC Kiosko →](./SevillaFCKiosko)
+- [Pacman Animación →](./pacman-animacion)
+- [Index →](./Index)
 
 ---
 
-### 🌐 Index Personal
-Página índice personal con diseño moderno y responsivo.
+## 🚀 Cómo ejecutar un proyecto localmente
 
-[Ver proyecto →](./Index)
+1. Clona el repositorio:
 
----
-
-## 📚 Certificaciones
-
-Mis certificaciones y logros profesionales están disponibles en la carpeta [Certificados](./Certificados).
-
----
-
-## 🛠️ Tecnologías y Herramientas
-
-```text
-💻 Lenguajes:  JavaScript, HTML5, CSS3, Java
-🎨 Frontend:  Responsive Design, Animaciones CSS
-🎮 Game Development
-🔧 Control de versiones: Git & GitHub
+```bash
+git clone https://github.com/RobertoMontanes/Portfolio.git
+cd Portfolio
 ```
+
+2. Abre el proyecto que quieras en tu navegador. Muchos de los proyectos son páginas estáticas — simplemente abre el archivo `index.html` de la carpeta del proyecto.
+
+3. Para proyectos Java (por ejemplo `Pizzeria2`), usa tu IDE o ejecuta con Maven/Gradle si están configurados. Si necesitas instrucciones específicas para alguno de los proyectos, puedo añadir un README por proyecto con pasos detallados.
+
+---
+
+## 🛠 Tecnologías y herramientas
+
+- Lenguajes: JavaScript, HTML5, CSS3, Java
+- Frontend: diseño responsivo, animaciones CSS, DOM y canvas
+- Control de versiones: Git & GitHub
+- Enfoque: código modular, legible y fácil de entender
+
+---
+
+## 🧾 Certificados
+
+Mis certificaciones y reconocimientos están en la carpeta [Certificados](./Certificados).
+
+---
+
+## 🤝 Contribuciones
+
+Si quieres colaborar o mejorar algo (correcciones, documentación, mejoras visuales), abre un issue o envía un pull request. Bienvenidas las propuestas concretas (ej.: "añadir instrucciones de ejecución para Pizzeria2").
 
 ---
 
 ## 📫 Contacto
 
-¿Interesado en colaborar o conocer más sobre mis proyectos? 
-
-- 💼 GitHub: [@RobertoMontanes](https://github.com/RobertoMontanes)
-- 📧 Email: [rmr15092004@gmail.com](mailto:rmr15092004@gmail.com)
-- 🔗 LinkedIn: [RobertoMontanes](https://www.linkedin.com/in/roberto-monta%C3%B1%C3%A9s-ramos-7743b9200/)
+- GitHub: [@RobertoMontanes](https://github.com/RobertoMontanes)
+- Email: rmr15092004@gmail.com
+- LinkedIn: https://www.linkedin.com/in/roberto-monta%C3%B1%C3%A9s-ramos-7743b9200/
 
 ---
 
 ## 📄 Licencia
 
-Este portafolio y sus proyectos están disponibles bajo licencia MIT, salvo indicación contraria en cada proyecto específico.
+Este portafolio y sus proyectos están disponibles bajo la licencia MIT, salvo indicación contraria en cada proyecto.
 
 ---
 
 <div align="center">
-  
-**¡Gracias por visitar mi portafolio! ** ⭐
+
+**¡Gracias por visitar mi portafolio!** ⭐
 
 *Hecho con ❤️ por Roberto Montañés Ramos*
 
